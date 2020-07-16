@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ems and Rems</title>
+  <style>
+    /* #box-1 {
+      font-size: 20px;
+    }
+
+    #box-1 p {
+      font-size: 1.5em;
+      padding: 1em;
+    } */
+    /* Em units will multiply the font set on their parent element */
+    /* The issue with this is that nested elements will be bigger 
+    than their parents; also can mess with padding and margin in wonky ways */
+    
+    /* Rem units will multiply based off of root element, so they will always be hunky-dory, even with nested elements */
+    /* Just always use rems */
+    html {
+      font-size: 10px;
+      /* 62.5% is the same size */
+    }
+
+    /* #box-1 ul {
+      font-size: 1.2em;
+    } */
+
+    #box-2 h3 {
+      font-size: 2rem;
+    }
+    #box-2 p {
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="box-1">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Magni aliquam distinctio, nisi, quod quibusdam doloribus 
+      doloremque maiores quo beatae dignissimos vitae, rerum 
+      ratione nostrum culpa maxime non. Animi, harum modi.</p>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </li>
+        <li>4</li>
+      </ul>
+  </div>
+  <div id="box-2">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Magni aliquam distinctio, nisi, quod quibusdam doloribus 
+      doloremque maiores quo beatae dignissimos vitae, rerum 
+      ratione nostrum culpa maxime non. Animi, harum modi.</p>
+  </div>
+</body>
+</html>
